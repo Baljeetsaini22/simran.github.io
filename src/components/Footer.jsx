@@ -9,7 +9,7 @@ function Footer() {
           Simran Kaur | UI & UX Designer
         </h3>
         <p className="mb-4 text-sm">
-          Designed with 💜 by Baljeet Singh. Let’s build user-friendly and beautiful digital experiences together!
+          Designed & Development with 💜 by Baljeet Singh. Let’s build user-friendly and beautiful digital experiences together!
         </p>
 
         {/* Social Icons */}
