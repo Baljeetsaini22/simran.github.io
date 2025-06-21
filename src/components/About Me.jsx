@@ -1,14 +1,13 @@
 import React from "react";
-import myImg from "/simran/myimg.jpg";
-
+import myImg from "/simran/img.png";
 
 function About() {
   return (
     <section id="about" className="bg-black text-white py-16 px-4">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="w-full px-[7.5%]  grid md:grid-cols-2 gap-12 items-center ">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
+          <h2 className="text-4xl font-bold mb-10 bg-[#ffe600] text-transparent bg-clip-text">
             About Me
           </h2>
           <p className="text-gray-300 mb-6 leading-relaxed">
@@ -20,7 +19,8 @@ function About() {
 
           <div className="space-y-2 text-sm text-gray-300">
             <p>
-              <span className="font-semibold text-white">Name:</span> Simran Kaur
+              <span className="font-semibold text-white">Name:</span> Simran
+              Kaur
             </p>
             <p>
               <span className="font-semibold text-white">DOB:</span> 10th March
@@ -31,7 +31,8 @@ function About() {
               Simrankaurnagpal01@gmail.com
             </p>
             <p>
-              <span className="font-semibold text-white">Contact No:</span> 91 84277 19801
+              <span className="font-semibold text-white">Contact No:</span> 91
+              84277 19801
             </p>
             <p>
               <span className="font-semibold text-white">Nationality:</span>{" "}
@@ -51,7 +52,7 @@ function About() {
           <img
             src={myImg}
             alt="Simran UI & UX Designer"
-            className="w-64 h-64 object-cover rounded-full shadow-lg border-4 border-fuchsia-500"
+            className="w-70 h-70 object-cover rounded-full shadow-lg border-4 border-dotted animate-spin hover:animate-none border-[#59C378] hover:border-[#ffe600]"
           />
         </div>
       </div>

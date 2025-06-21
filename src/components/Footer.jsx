@@ -24,10 +24,10 @@ const Footer = () => {
   return (
     <footer className="bg-black text-gray-300 pt-12 px-4 relative" id="footer">
       {/* Grid Layout */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 border-b border-gray-700 pb-10">
+      <div className="w-full px-[7.5%]  grid md:grid-cols-3 gap-8 border-b border-gray-700 pb-10">
         {/* Logo + Menu */}
         <div>
-          <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
+          <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-[#ffe600]">
             Simran
           </h2>
           <nav className="mt-4 flex flex-col gap-2 text-sm">
@@ -37,7 +37,7 @@ const Footer = () => {
             <a href="#services" className="hover:text-cyan-400 flex items-center gap-1">
               <FaServicestack /> Services
             </a>
-            <a href="#projects" className="hover:text-cyan-400 flex items-center gap-1">
+            <a href="#project" className="hover:text-cyan-400 flex items-center gap-1">
               <FaProjectDiagram /> Projects
             </a>
             <a href="#contact" className="hover:text-cyan-400 flex items-center gap-1">
@@ -79,7 +79,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-gradient-to-r from-fuchsia-500 to-cyan-400 text-black px-4 py-2 rounded font-semibold hover:scale-105 transition"
+              className="bg-[#59C378] hover:bg-[#ffe600] text-white hover:text-black px-4 py-2 rounded font-semibold hover:scale-105 transition"
             >
               Send Message
             </button>
@@ -88,7 +88,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Note */}
-      <div className="text-center mt-8 text-sm text-gray-400">
+      <div className="text-center mt-8 pb-4 text-sm text-gray-400">
         Portfolio developed & designed with <FaHeart className="inline text-red-500" /> by{" "}
         <span className="text-white font-semibold"><a className="decoration-none" href="https://www.linkedin.com/in/baljeet-singh-13590834b/">Baljeet Singh</a> </span> © {new Date().getFullYear()}
       </div>
@@ -97,7 +97,7 @@ const Footer = () => {
       {showTopBtn && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-cyan-500 hover:bg-cyan-400 text-white p-3 rounded-full shadow-lg transition animate-bounce z-50"
+          className="fixed bottom-6 right-6 bg-[#ffe600] text-black p-3 rounded-full shadow-lg transition animate-bounce z-50"
           aria-label="Scroll to Top"
         >
           <FaArrowUp />

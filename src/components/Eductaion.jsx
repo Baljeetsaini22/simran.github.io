@@ -21,8 +21,8 @@ const educationData = [
 const Education = () => {
   return (
     <section id="education" className="bg-black text-white py-16 px-6">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-10 bg-gradient-to-r from-fuchsia-500 to-cyan-400 text-transparent bg-clip-text">
+      <div className="w-full px-[7.5%] text-center">
+        <h2 className="text-4xl font-bold mb-10 bg-[#ffe600] text-transparent bg-clip-text">
           Education
         </h2>
 
@@ -30,7 +30,7 @@ const Education = () => {
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className="bg-gray-900 p-6 rounded-xl hover:scale-105 transition-transform duration-300 hover:shadow-[0_0_20px_rgba(255,0,255,0.7),0_0_20px_rgba(0,255,255,0.5)]"
+              className="bg-gray-900 p-6 rounded-xl shadow-[0_-5px_5px_#59C378] hover:shadow-[0_5px_5px_#ffe600] transform hover:scale-105 transition-all duration-300"
             >
               <h3 className="text-xl font-semibold text-white mb-2">{edu.title}</h3>
               <p className="text-sm text-gray-400">{edu.institution}</p>

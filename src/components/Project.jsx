@@ -25,9 +25,9 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="portfolio" className="bg-black text-white py-16 px-6 md:px-10">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-cyan-400">
+    <section className="bg-black text-white py-16 px-6 md:px-10" id="project">
+      <div className="w-full px-[7.5%] ">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-[#ffe600]">
           My Projects
         </h2>
 
@@ -38,7 +38,7 @@ function Projects() {
               href={project.link}
               target="_blank"
               rel="noreferrer"
-              className="bg-gray-900 p-6 rounded-xl border border-gray-700 shadow-lg hover:shadow-2xl hover:bg-gradient-to-r hover:from-fuchsia-600 hover:to-cyan-500 hover:text-black transform hover:scale-105 transition-all duration-300"
+              className="bg-gray-900 p-6 rounded-xl shadow-[0_-5px_5px_#59C378] hover:shadow-[0_5px_5px_#ffe600] transform hover:scale-105 transition-all duration-300"
             >
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-sm">{project.description}</p>

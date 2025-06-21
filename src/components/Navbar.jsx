@@ -8,19 +8,19 @@ function Navbar() {
 
   return (
     <header className="bg-black text-white fixed top-0 w-full z-50 shadow-md">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="w-full mx-auto px-[7.5%] py-4 flex items-center justify-between">
         {/* Left: Logo */}
-        <h1 className="text-2xl font-bold bg-gradient-to-r from-fuchsia-500 to-cyan-400 text-transparent bg-clip-text">
+        <h1 className="text-2xl font-bold text-[#ffe600] bg-clip-text">
           Simran
         </h1>
 
         {/* Center: Menu for Desktop */}
-        <nav className="hidden md:flex flex-1 justify-center space-x-6 uppercase text-sm font-medium">
+        <nav className="hidden md:flex justify-center space-x-6 uppercase text-sm font-medium">
           {navLinks.map((link) => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
-              className="hover:text-fuchsia-400 transition"
+              className="hover:text-[#ffe600] transition"
             >
               {link}
             </a>
@@ -31,7 +31,7 @@ function Navbar() {
         <div className="hidden md:block">
           <a
             href="#contact"
-            className="px-5 py-2 bg-gradient-to-r from-fuchsia-500 to-cyan-400 text-black rounded-full font-semibold text-sm hover:scale-105 transition"
+            className="px-5 py-2 bg-[#59c378] hover:bg-[#ffe600] text-white hover:text-black rounded-full font-semibold text-sm hover:scale-105 transition"
           >
             Let’s Talk
           </a>
@@ -41,7 +41,7 @@ function Navbar() {
         <div className="md:hidden flex items-center space-x-3">
           <a
             href="#contact"
-            className="px-3 py-1.5 bg-gradient-to-r from-fuchsia-500 to-cyan-400 text-black rounded-full text-xs font-medium"
+            className="px-3 py-1.5 bg-[#59c378] hover:bg-[#ffe600] text-white hover:text-black rounded-full text-xs font-medium"
           >
             Let’s Talk
           </a>
