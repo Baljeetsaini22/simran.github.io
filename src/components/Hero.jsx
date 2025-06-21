@@ -1,28 +1,57 @@
-function Hero() {
+import React from "react";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+
+const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-[90vh] flex items-center justify-center bg-black text-white px-6"
+      className="min-h-screen bg-black text-white flex items-center justify-center px-4"
     >
-      <div className="text-center max-w-3xl">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-500 via-yellow-400 to-orange-500 bg-clip-text text-transparent">
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
           Hi, I'm Simran
         </h1>
-        <h2 className="text-2xl md:text-3xl text-teal-300 font-medium mb-4">
-          UI & UX Designer
-        </h2>
-        <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-          I design bold visuals, powerful brand stories, and user-friendly experiences. Let’s bring your ideas to life through design.
+        <h2 className="text-xl md:text-2xl font-medium mb-4">UI & UX Designer</h2>
+        <p className="text-gray-400 max-w-xl mx-auto mb-6">
+          Crafting beautiful and user-friendly designs with clean interfaces and smart UX thinking.
         </p>
+
+        <div className="flex items-center justify-center space-x-4 mb-6">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-500 hover:scale-110 transition text-2xl"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:scale-110 transition text-2xl"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:scale-110 transition text-2xl"
+          >
+            <FaGithub />
+          </a>
+        </div>
+
         <a
-          href="#portfolio"
-          className="inline-block px-6 py-3 text-black font-semibold rounded-full bg-gradient-to-r from-fuchsia-500 to-cyan-400 hover:scale-105 transition"
+          href="#contact"
+          className="inline-block bg-gradient-to-r from-fuchsia-500 to-cyan-400 text-black px-6 py-2 rounded-full font-semibold hover:scale-105 transition"
         >
-          View Portfolio
+          Let’s Talk
         </a>
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
