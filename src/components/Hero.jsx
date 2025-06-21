@@ -1,54 +1,49 @@
-import React from "react";
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaArrowDown, FaArrowRight } from "react-icons/fa";
+import myImg from "/simran/myimg.jpg";
+
+import AutoTypingText from "../components/AutoTypeText";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-black text-white flex items-center justify-center px-4"
+      className="bg-black text-white h-full min-h-screen flex items-center"
     >
-      <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-          Hi, I'm Simran
-        </h1>
-        <h2 className="text-xl md:text-2xl font-medium mb-4">UI & UX Designer</h2>
-        <p className="text-gray-400 max-w-xl mx-auto mb-6">
-          Crafting beautiful and user-friendly designs with clean interfaces and smart UX thinking.
-        </p>
+      <div className="max-w-7xl mx-auto w-full px-4 flex flex-col md:flex-row items-center justify-between gap-12">
+        {/* Left Content */}
+        <div className="md:w-1/2 text-center md:text-left space-y-6">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight bg-gradient-to-r from-fuchsia-500 to-cyan-400 text-transparent bg-clip-text">
+            <span>Hello, </span>
+            <AutoTypingText texts={["I'm Simran"]} /><br />UI & UX Designer
+            <span>UI & UX Designer</span>
+          </h1>
+          <p className="text-gray-300">
+            I craft clean, user-friendly interfaces with a blend of creativity
+            and usability. Specialized in Figma, Photoshop, and Canva.
+          </p>
 
-        <div className="flex items-center justify-center space-x-4 mb-6">
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-pink-500 hover:scale-110 transition text-2xl"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 hover:scale-110 transition text-2xl"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:scale-110 transition text-2xl"
-          >
-            <FaGithub />
-          </a>
+          <div className="flex justify-center md:justify-start gap-4 pt-4">
+            <button className="flex items-center gap-2 bg-fuchsia-600 hover:bg-fuchsia-700 px-5 py-2 rounded-full transition duration-300">
+              Hire Me <FaArrowRight />
+            </button>
+            <a
+              href="/Simran-CV.pdf"
+              download
+              className="flex items-center gap-2 border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-5 py-2 rounded-full transition duration-300"
+            >
+              Download CV <FaArrowDown />
+            </a>
+          </div>
         </div>
 
-        <a
-          href="#contact"
-          className="inline-block bg-gradient-to-r from-fuchsia-500 to-cyan-400 text-black px-6 py-2 rounded-full font-semibold hover:scale-105 transition"
-        >
-          Let’s Talk
-        </a>
+        {/* Right Image */}
+        <div className="md:w-1/2 flex justify-center">
+          <img
+            src={myImg}
+            alt="Simran"
+            className="w-64 md:w-96 rounded-full shadow-xl hover:scale-105 transition duration-300"
+          />
+        </div>
       </div>
     </section>
   );

@@ -12,15 +12,14 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-6">
             <h3 className="text-xl font-semibold">Contact Info</h3>
-            <p>Email: <a href="mailto:simran.uiux@example.com" className="text-cyan-400">simran.uiux@example.com</a></p>
-            <p>Phone: <a href="tel:+919876543210" className="text-cyan-400">+91 98765 43210</a></p>
+            <p>Email: <a href="mailto:simran.uiux@example.com" className="text-cyan-400">simrankaurnagpal01@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918427719801" className="text-cyan-400">91 84277 19801</a></p>
             <p>Location: Chandigarh, India</p>
             <p className="text-sm text-gray-400">
               I’m always open to discussing new projects, design challenges, or opportunities to be part of your vision.
             </p>
           </div>
 
-          {/* Contact Form */}
           <form className="space-y-4">
             <div>
               <label className="block mb-1 text-sm">Name</label>
