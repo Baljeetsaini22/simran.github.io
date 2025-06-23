@@ -1,53 +1,68 @@
-import React from "react";
+
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio built with React & Tailwind.",
-    link: "#",
+    id: 1,
+    title: "UI Design",
+    image: "/project/project1.jpg",
+    link: "",
+    shadow: "shadow-orange-500"
   },
   {
-    title: "E-commerce UI",
-    description: "Modern shopping UI with product filters.",
-    link: "#",
+    id: 2,
+    title: "UI Design",
+    image: "/project/project2.jpg",
+    link: "",
+    shadow: "shadow-blue-500"
   },
   {
-    title: "Travel Landing Page",
-    description: "Animated landing page for a travel agency.",
-    link: "#",
+    id: 3,
+    title: "UI Design",
+    image: "/project/project3.jpg",
+    link: "",
+    shadow: "shadow-pink-500"
   },
   {
-    title: "Fitness App UI",
-    description: "Clean fitness tracking dashboard design.",
-    link: "#",
+    id: 4,
+    title: "UI Design",
+    image: "/project/project4.jpg",
+    link: "",
+    shadow: "shadow-indigo-600"
   },
 ];
 
-function Projects() {
+const Projects = () => {
   return (
-    <section className="bg-black text-white py-16 px-6 md:px-10" id="project">
-      <div className="w-full px-[7.5%] ">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-[#ffe600]">
-          My Projects
-        </h2>
+    <section id="project" className="bg-black text-white w-full h-auto px-[7.5%] py-16">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-yellow-400">My Projects</h2>
+        <p className="mt-4 text-gray-300">Click on a project to view it live</p>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {projects.map((project, idx) => (
-            <a
-              key={idx}
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
-              className="bg-gray-900 p-6 rounded-xl shadow-[0_-5px_5px_#59C378] hover:shadow-[0_5px_5px_#ffe600] transform hover:scale-105 transition-all duration-300"
-            >
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-sm">{project.description}</p>
-            </a>
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            onClick={() => window.open(project.link, "_blank")}
+            className={`cursor-pointer bg-gray-900 overflow-hidden rounded-xl shadow-[0_-5px_5px] ${project.shadow} hover:shadow-[0_5px_5px] hover:${project.shadow} transform hover:scale-105 transition-all duration-300`}
+          >
+            <img
+              src={project.image}
+              loading="lazy"
+              alt={project.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-yellow-400 text-center">
+                {project.title}
+              </h3>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
-}
+};
 
 export default Projects;
+

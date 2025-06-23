@@ -1,20 +1,23 @@
-import React from "react";
+
 
 const educationData = [
   {
-    title: "Bachelor of Design (UI/UX)",
-    institution: "Creative University",
-    year: "2021 - 2024",
+    title: "Bachelor of Art",
+    institution: "Punjabi University",
+    year: "Pursuing",
+    shadow: "shadow-orange-500",
   },
   {
-    title: "Diploma in Graphic Design",
-    institution: "Design Institute",
-    year: "2019 - 2021",
+    title: "Intermediate (12th)",
+    institution: "",
+    year: "2022 - 2023",
+    shadow: "shadow-blue-500" 
   },
   {
-    title: "High School",
-    institution: "St. Xavier's School",
-    year: "2017 - 2019",
+    title: "Matriculation (10th)",
+    institution: "",
+    year: "2020 - 2021",
+    shadow: "shadow-pink-500"
   },
 ];
 
@@ -30,7 +33,7 @@ const Education = () => {
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className="bg-gray-900 p-6 rounded-xl shadow-[0_-5px_5px_#59C378] hover:shadow-[0_5px_5px_#ffe600] transform hover:scale-105 transition-all duration-300"
+              className={`bg-gray-900 p-6 rounded-xl shadow-[0_-5px_5px] ${edu.shadow} hover:shadow-[0_5px_5px] hover:${edu.shadow} transform hover:scale-105 transition-all duration-300`}
             >
               <h3 className="text-xl font-semibold text-white mb-2">{edu.title}</h3>
               <p className="text-sm text-gray-400">{edu.institution}</p>

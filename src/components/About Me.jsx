@@ -18,32 +18,40 @@ function About() {
           </p>
 
           <div className="space-y-2 text-sm text-gray-300">
-            <p>
-              <span className="font-semibold text-white">Name:</span> Simran
-              Kaur
+            <p className="flex items-center gap-10">
+              <span className="font-semibold text-white w-20">Name</span>
+              <span>:</span>
+              <span>Simran Kaur</span>
             </p>
-            <p>
-              <span className="font-semibold text-white">DOB:</span> 10th March
-              2000
+            <p className="flex items-center gap-10">
+              <span className="font-semibold text-white w-20">DOB</span>
+              <span>:</span>
+              <span>10th March 2002</span>
             </p>
-            <p>
-              <span className="font-semibold text-white">Email:</span>{" "}
-              Simrankaurnagpal01@gmail.com
+            <p className="flex items-center gap-10">
+              <span className="font-semibold text-white w-20">Email</span>
+              <span>:</span>
+              <span>Simrankaurnagpal01@gmail.com</span>
             </p>
-            <p>
-              <span className="font-semibold text-white">Contact No:</span> 91
-              84277 19801
+            <p className="flex items-center gap-10">
+              <span className="font-semibold text-white w-20">Contact No</span>
+              <span>:</span>
+              <span>+91 84277 19801</span>
             </p>
-            <p>
-              <span className="font-semibold text-white">Nationality:</span>{" "}
-              Indian
+            <p className="flex items-center gap-10">
+              <span className="font-semibold text-white w-20">Nationality</span>
+              <span>:</span>
+              <span>Indian</span>
             </p>
-            <p>
-              <span className="font-semibold text-white">City:</span> Chandigarh
+            <p className="flex items-center gap-10">
+              <span className="font-semibold text-white w-20">City</span>
+              <span>:</span>
+              <span>Chandigarh</span>
             </p>
-            <p>
-              <span className="font-semibold text-white">Languages:</span>{" "}
-              English, Hindi, Punjabi
+            <p className="flex items-center gap-10">
+              <span className="font-semibold text-white w-20">Languages</span>
+              <span>:</span>
+              <span>English, Hindi, Punjabi</span>
             </p>
           </div>
         </div>
