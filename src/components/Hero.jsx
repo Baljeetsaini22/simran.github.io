@@ -1,6 +1,8 @@
-import { FaArrowDown, FaArrowRight } from "react-icons/fa";
+import { FaArrowDown, FaArrowRight, FaCheckCircle } from "react-icons/fa";
 import myImg from "/simran/img.jpg";
-
+import psIcon from "/banner/photoshop.svg"
+import aiIcon from "/banner/illustrator.svg"
+import sketchIcon from "/banner/diamond.svg"
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
@@ -43,12 +45,41 @@ const Hero = () => {
         </div>
 
         {/* Right Image */}
-        <div className="md:w-1/2 flex justify-center">
+        <div className="relative flex justify-center items-center md:w-1/2 w-full mt-10 md:mt-0">
+          {/* Profile Image with Circle Background */}
+          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden bg-cyan-400">
+            <img
+              src={myImg}
+              alt="Simran"
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          {/* Floating Icons */}
           <img
-            src={myImg}
-            alt="Simran"
-            className="w-64 md:w-96 rounded-full shadow-xl hover:scale-105 transition duration-300  bg-[#01b7e6] animate-pulse"
+            src={psIcon}
+            alt="Photoshop"
+            className="absolute top-4 left-0 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
           />
+          <img
+            src={aiIcon}
+            alt="Illustrator"
+            className="absolute top-4 right-0 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
+          />
+          <img
+            src={sketchIcon}
+            alt="Sketch"
+            className="absolute bottom-6 right-4 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
+          />
+
+          {/* Badge */}
+          <div className="absolute bottom-6 left-4 bg-white shadow-md px-4 py-2 rounded-xl flex items-center gap-2 animate-bounce">
+            <FaCheckCircle className="text-green-500" />
+            <div>
+              <p className="text-xs font-semibold text-gray-800">1,500+</p>
+              <p className="text-xs text-gray-500">Complete Project</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
