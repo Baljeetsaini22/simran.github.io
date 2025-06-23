@@ -15,8 +15,8 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-black py-16 px-6 text-white">
-      <div className="w-full px-[7.5%]  text-center">
+    <section id="skills" className="w-full px-[7.5%] bg-black text-white py-16 h-full">
+      <div className="text-center">
         <h2 className="text-4xl font-bold mb-10 bg-[#ffe600] text-transparent bg-clip-text">
           My Skills
         </h2>

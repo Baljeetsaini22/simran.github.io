@@ -3,8 +3,8 @@ import myImg from "/simran/img.png";
 
 function About() {
   return (
-    <section id="about" className="bg-black text-white py-16 px-4">
-      <div className="w-full px-[7.5%]  grid md:grid-cols-2 gap-12 items-center ">
+    <section id="about" className="w-full px-[7.5%] bg-black text-white py-16 h-full">
+      <div className="grid md:grid-cols-2 gap-12 items-center ">
         {/* Left Content */}
         <div>
           <h2 className="text-4xl font-bold mb-10 bg-[#ffe600] text-transparent bg-clip-text">
@@ -18,38 +18,38 @@ function About() {
           </p>
 
           <div className="space-y-2 text-sm text-gray-300">
-            <p className="flex items-center gap-10">
-              <span className="font-semibold text-white w-20">Name</span>
+            <p className="flex items-center gap-8 sm:gap-10">
+              <span className="font-semibold text-white w-10 md:w-15">Name</span>
               <span>:</span>
               <span>Simran Kaur</span>
             </p>
-            <p className="flex items-center gap-10">
-              <span className="font-semibold text-white w-20">DOB</span>
+            <p className="flex items-center gap-8 sm:gap-10">
+              <span className="font-semibold text-white w-10 md:w-15">DOB</span>
               <span>:</span>
               <span>10th March 2002</span>
             </p>
-            <p className="flex items-center gap-10">
-              <span className="font-semibold text-white w-20">Email</span>
+            <p className="flex items-center gap-8 sm:gap-10">
+              <span className="font-semibold text-white w-10 md:w-15">Email</span>
               <span>:</span>
               <span>Simrankaurnagpal01@gmail.com</span>
             </p>
-            <p className="flex items-center gap-10">
-              <span className="font-semibold text-white w-20">Contact No</span>
+            <p className="flex items-center gap-8 sm:gap-10">
+              <span className="font-semibold text-white w-10 md:w-15">Phone</span>
               <span>:</span>
               <span>+91 84277 19801</span>
             </p>
-            <p className="flex items-center gap-10">
-              <span className="font-semibold text-white w-20">Nationality</span>
+            <p className="flex items-center gap-8 sm:gap-10">
+              <span className="font-semibold text-white w-10 md:w-15">Nationality</span>
               <span>:</span>
               <span>Indian</span>
             </p>
-            <p className="flex items-center gap-10">
-              <span className="font-semibold text-white w-20">City</span>
+            <p className="flex items-center gap-8 sm:gap-10">
+              <span className="font-semibold text-white w-10 md:w-15">City</span>
               <span>:</span>
               <span>Chandigarh</span>
             </p>
-            <p className="flex items-center gap-10">
-              <span className="font-semibold text-white w-20">Languages</span>
+            <p className="flex items-center gap-8 sm:gap-10">
+              <span className="font-semibold text-white w-10 md:w-15">Languages</span>
               <span>:</span>
               <span>English, Hindi, Punjabi</span>
             </p>

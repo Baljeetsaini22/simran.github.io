@@ -25,9 +25,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-black text-gray-300 pt-12 px-4 relative" id="footer">
+    <footer className="bg-black w-full h-auto px-[7.5%] pt-16 text-gray-300 relative" id="footer">
       {/* Grid Layout */}
-      <div className="w-full px-[7.5%] grid md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
+      <div className="grid md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
         {/* Logo + Social Icons */}
         <div>
           <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-[#ffe600] mb-4">

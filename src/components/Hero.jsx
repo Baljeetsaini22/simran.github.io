@@ -12,9 +12,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-black text-white h-full min-h-screen mt-4 flex items-center"
+      className="w-full px-[7.5%] bg-black text-white py-16 h-full mt-15  flex items-center"
     >
-      <div className="w-full px-[7.5%] flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left space-y-6">
           <p className="text-2xl md:text-3xl font-bold text-gray-300">Hello</p>

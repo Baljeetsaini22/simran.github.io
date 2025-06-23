@@ -23,8 +23,8 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section id="education" className="bg-black text-white py-16 px-6">
-      <div className="w-full px-[7.5%] text-center">
+    <section id="education" className="bg-black text-white w-full h-auto px-[7.5%] py-16">
+      <div className="text-center">
         <h2 className="text-4xl font-bold mb-10 bg-[#ffe600] text-transparent bg-clip-text">
           Education
         </h2>

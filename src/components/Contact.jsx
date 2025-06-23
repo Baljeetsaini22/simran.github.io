@@ -3,9 +3,9 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-black text-white px-4 py-12" id="contact">
-      <div className="w-full px-[7.5%] ">
-        <h2 className="text-3xl font-bold text-center mb-8 text-transparent bg-clip-text bg-[#ffe600]">
+    <div className="bg-black text-white w-full h-auto px-[7.5%] py-16" id="contact">
+      <div className="text-center ">
+        <h2 className="text-3xl font-bold mb-8 text-transparent bg-clip-text bg-[#ffe600]">
           Get In Touch
         </h2>
 
