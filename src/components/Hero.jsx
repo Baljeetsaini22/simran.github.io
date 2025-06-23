@@ -7,7 +7,8 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: ["Simran Kaur", "UI & UX Designer"],
     loop: true,
-    delaySpeed: 2000,
+    deleteSpeed: 60,
+    delaySpeed: 1500,
   });
   return (
     <section
