@@ -28,7 +28,7 @@ function Navbar() {
           <div className="hidden md:block">
             <a
               href="#contact"
-              className="px-5 py-2 bg-[#59c378] hover:bg-[#ffe600] text-white hover:text-black rounded-full font-semibold text-sm hover:scale-105 transition"
+              className="bg-[#59C378] hover:bg-[#ffe600] text-white hover:text-black px-4 py-2 rounded font-semibold hover:scale-105 transition"
             >
               Let’s Talk
             </a>
@@ -83,7 +83,7 @@ function Navbar() {
             ))}
             <a
               href="#contact"
-              className="block w-fit mx-auto text-center px-4 py-2 bg-[#59c378] hover:bg-[#ffe600] text-white hover:text-black rounded-full text-sm font-semibold transition"
+              className="block w-fit mx-auto text-center bg-[#59C378] hover:bg-[#ffe600] text-white hover:text-black px-4 py-2 rounded font-semibold hover:scale-105 transition"
               onClick={() => setIsOpen(false)}
             >
               Let’s Talk

@@ -1,9 +1,9 @@
 import { FaArrowDown, FaArrowRight, FaCheckCircle } from "react-icons/fa";
 import myImg from "/simran/img.jpg";
-import psIcon from "/banner/photoshop.svg";
 import figma from "/banner/figma.svg";
 import XD from "/banner/AXd.png";
-import html from "/banner/html.webp"
+import psIcon from "/banner/photoshop.svg";
+import html from "/banner/html.webp";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
@@ -32,13 +32,13 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center md:justify-start gap-4 pt-4">
-            <button className="flex items-center gap-2 bg-[#59C378] px-5 py-2 rounded-full transition duration-300">
+            <button className="flex items-center gap-2 bg-[#59C378] hover:bg-[#ffe600] text-white hover:text-black px-4 py-2 rounded font-semibold hover:scale-105 transition">
               Hire Me <FaArrowRight />
             </button>
             <a
               href="/Simran-CV.pdf"
               download
-              className="flex items-center gap-2 border border-[#a80002] text-[#a80002] hover:bg-[#59C378] hover:text-white px-5 py-2 rounded-full transition duration-300"
+              className="flex items-center gap-2 border border-[#a80002] text-[#a80002] hover:bg-[#59C378] hover:text-white px-4 py-2 rounded font-semibold hover:scale-105 transition duration-300 "
             >
               Download CV <FaArrowDown />
             </a>
@@ -58,19 +58,19 @@ const Hero = () => {
 
           {/* Floating Icons */}
           <img
-            src={psIcon}
-            alt="Photoshop"
-            className="absolute top-4 left-0 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
-          />
-          <img
             src={figma}
             alt="Figma"
-            className="absolute top-4 right-0 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
+            className="absolute top-4 left-0 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
           />
           <img
             src={XD}
             alt="Photoshop Express"
-            className="absolute bottom-6 right-4 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
+            className="absolute top-6 right-4 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
+          />
+          <img
+            src={psIcon}
+            alt="Photoshop"
+            className="absolute bottom-4 right-0 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
           />
 
           {/* Badge */}
