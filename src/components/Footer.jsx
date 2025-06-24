@@ -57,7 +57,7 @@ const Footer = () => {
               <FaHome /> Home
             </a>
             <a href="#skills" className="hover:text-cyan-400 flex items-center gap-1">
-              <FaServicestack /> Skills
+              <FaServicestack /> SkillS
             </a>
             <a href="#project" className="hover:text-cyan-400 flex items-center gap-1">
               <FaProjectDiagram /> Projects
