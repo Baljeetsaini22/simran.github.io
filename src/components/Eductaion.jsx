@@ -3,20 +3,20 @@
 const educationData = [
   {
     title: "Bachelor of Art",
-    institution: "Punjabi University",
-    year: "Pursuing",
+    institution: "Punjabi University, Patiala",
+    year: "",
     shadow: "shadow-orange-500",
   },
   {
     title: "Intermediate (12th)",
-    institution: "",
-    year: "2022 - 2023",
+    institution: "PBSE",
+    year: "",
     shadow: "shadow-blue-500" 
   },
   {
     title: "Matriculation (10th)",
-    institution: "",
-    year: "2020 - 2021",
+    institution: "HBSE",
+    year: "",
     shadow: "shadow-pink-500"
   },
 ];

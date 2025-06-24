@@ -6,7 +6,7 @@ function About() {
     <section id="about" className="w-full px-[7.5%] bg-black text-white py-16 h-full">
       <div className="grid md:grid-cols-2 gap-12 items-center ">
         {/* Left Content */}
-        <div>
+        <div className="text-justify">
           <h2 className="text-4xl font-bold mb-10 bg-[#ffe600] text-transparent bg-clip-text">
             About Me
           </h2>
@@ -26,7 +26,7 @@ function About() {
             <p className="flex items-center gap-8 sm:gap-10">
               <span className="font-semibold text-white w-10 md:w-15">DOB</span>
               <span>:</span>
-              <span>10th March 2002</span>
+              <span>9th Nov 2004</span>
             </p>
             <p className="flex items-center gap-8 sm:gap-10">
               <span className="font-semibold text-white w-10 md:w-15">Email</span>

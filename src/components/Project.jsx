@@ -50,7 +50,7 @@ const Projects = () => {
               src={project.image}
               loading="lazy"
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover opacity-70 hover:opacity-100"
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-yellow-400 text-center">

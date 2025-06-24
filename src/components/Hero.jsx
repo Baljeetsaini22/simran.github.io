@@ -47,11 +47,11 @@ const Hero = () => {
         {/* Right Image */}
         <div className="relative flex justify-center items-center md:w-1/2 w-full mt-10 md:mt-0">
           {/* Profile Image with Circle Background */}
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden bg-cyan-400">
+          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden ">
             <img
               src={myImg}
               alt="Simran"
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full animate-pulse"
             />
           </div>
 
@@ -76,7 +76,7 @@ const Hero = () => {
           <div className="absolute bottom-6 left-4 bg-white shadow-md px-4 py-2 rounded-xl flex items-center gap-2 animate-bounce">
             <FaCheckCircle className="text-green-500" />
             <div>
-              <p className="text-xs font-semibold text-gray-800">1,500+</p>
+              <p className="text-xs font-semibold text-gray-800">15+</p>
               <p className="text-xs text-gray-500">Complete Project</p>
             </div>
           </div>
