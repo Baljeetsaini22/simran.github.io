@@ -48,7 +48,7 @@ const Hero = () => {
         {/* Right Image */}
         <div className="relative flex justify-center items-center md:w-1/2 w-full mt-10 md:mt-0">
           {/* Profile Image with Circle Background */}
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden ">
+          <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-120 lg:h-120 rounded-full overflow-hidden ">
             <img
               src={myImg}
               alt="Simran"
@@ -65,7 +65,7 @@ const Hero = () => {
           <img
             src={XD}
             alt="Photoshop Express"
-            className="absolute top-6 right-4 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
+            className="absolute top-4 right-0 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
           />
           <img
             src={psIcon}
@@ -76,7 +76,7 @@ const Hero = () => {
           {/* Badge */}
           <img
             src={html}
-            className="absolute bottom-6 left-4 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
+            className="absolute bottom-4 left-0 w-12 h-12 md:w-14 md:h-14 bg-white rounded-xl p-1 shadow-lg animate-bounce"
           ></img>
         </div>
       </div>
