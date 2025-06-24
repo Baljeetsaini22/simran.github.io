@@ -2,7 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
 // Dummy logos (replace with your actual images)
-import logo1 from "/logo/digi.png";
+import logo1 from "/logo/digibeez.svg";
 
 
 const experienceData = [
@@ -36,12 +36,12 @@ const Experience = () => {
               </div>
 
               {/* Middle: Logo */}
-              <div className="w-14 h-10 flex-shrink-0 bg-white rounded-2xl overflow-hidden mb-4 md:mb-0">
-                <img src={exp.logo} alt="company logo" className="object-contain w-full h-full" />
+              <div className="flex-shrink-0 rounded-2xl overflow-hidden mb-4 md:mb-0">
+                <img src={exp.logo} alt="company logo" className="object-contain w-14 h-full" />
               </div>
 
               {/* Right: Info */}
-              <div className="flex-1 md:pl-6 w-full md:w-auto text-center md:text-left">
+              <div className=" md:text-left">
                 <h3 className="text-lg font-bold text-white">{exp.role}</h3>
                 <p className="text-sm text-red-400">{exp.company}</p>
               </div>
