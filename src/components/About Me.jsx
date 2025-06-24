@@ -60,7 +60,7 @@ function About() {
           <img
             src={myImg}
             alt="Simran UI & UX Designer"
-            className="w-70 h-70 object-cover rounded-full shadow-lg border-4 border-dotted animate-spin hover:animate-none border-[#59C378] hover:border-[#ffe600]"
+            className="w-70 h-70 object-cover rounded-full shadow-lg border-4 border-dotted hover:animate-spin border-[#59C378] hover:border-[#ffe600]"
           />
         </div>
       </div>

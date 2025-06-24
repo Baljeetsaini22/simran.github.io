@@ -4,29 +4,50 @@ const projects = [
   {
     id: 1,
     title: "UI Design",
-    image: "/project/project1.jpg",
-    link: "",
-    shadow: "shadow-orange-500"
+    image: "/project/Jobhubworld.png",
+    link: "https://www.jobhub.world/",
+    shadow: "shadow-teal-400"
   },
   {
     id: 2,
     title: "UI Design",
-    image: "/project/project2.jpg",
-    link: "",
-    shadow: "shadow-blue-500"
+    image: "/project/Digibeez.png",
+    link: "https://digibeez.in/",
+    shadow: "shadow-yellow-500"
   },
   {
     id: 3,
     title: "UI Design",
-    image: "/project/project3.jpg",
-    link: "",
-    shadow: "shadow-pink-500"
+    image: "/project/vrecruiters.png",
+    link: "https://www.vrecruiters.in/",
+    shadow: "shadow-cyan-500"
   },
   {
     id: 4,
     title: "UI Design",
+    image: "/project/project1.jpg",
+    link: "/",
+    shadow: "shadow-orange-500"
+  },
+  {
+    id: 5,
+    title: "UI Design",
+    image: "/project/project2.jpg",
+    link: "/",
+    shadow: "shadow-blue-500"
+  },
+  {
+    id: 6,
+    title: "UI Design",
+    image: "/project/project3.jpg",
+    link: "/",
+    shadow: "shadow-pink-500"
+  },
+  {
+    id: 7,
+    title: "UI Design",
     image: "/project/project4.jpg",
-    link: "",
+    link: "/",
     shadow: "shadow-indigo-600"
   },
 ];
