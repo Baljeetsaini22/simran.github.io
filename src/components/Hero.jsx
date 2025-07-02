@@ -27,7 +27,6 @@ const Hero = () => {
             <Cursor
               cursorStyle="|"
               cursorColor="#fb3834"
-              cursorBlinking={false}
               show={true}
             />
           </h1>
