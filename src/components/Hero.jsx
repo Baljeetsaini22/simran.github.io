@@ -8,7 +8,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   const [text] = useTypewriter({
-    words: ["Simran Kaur", "UI & UX Designer"],
+    words: ["Simran Kaur", "a UI & UX Designer"],
     loop: true,
     deleteSpeed: 60,
     delaySpeed: 1500,
@@ -24,7 +24,12 @@ const Hero = () => {
           <p className="text-2xl md:text-3xl font-bold text-gray-300">Hello</p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400 leading-tight mb-4">
             I'm {text}
-            <Cursor cursorStyle="|" />
+            <Cursor
+              cursorStyle="|"
+              cursorColor="#fb3834"
+              cursorBlinking={false}
+              show={true}
+            />
           </h1>
           <p className="text-gray-300">
             I craft clean, user-friendly interfaces with a blend of creativity
@@ -32,7 +37,10 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center md:justify-start gap-4 pt-4">
-            <a href="#contact" className="flex items-center gap-2 bg-[#59C378] hover:bg-[#ffe600] text-white hover:text-black px-4 py-2 rounded font-semibold hover:scale-105 transition">
+            <a
+              href="#contact"
+              className="flex items-center gap-2 bg-[#59C378] hover:bg-[#ffe600] text-white hover:text-black px-4 py-2 rounded font-semibold hover:scale-105 transition"
+            >
               Hire Me <FaArrowRight />
             </a>
             <a
